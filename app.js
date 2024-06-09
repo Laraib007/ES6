@@ -63,10 +63,10 @@
 // let [a, ,b] = arr;
 // console.log([a, b] = [b, a])
 
-let obj = {op: 1, lhs: 2, rhs: 3}
+// let obj = {op: 1, lhs: 2, rhs: 3}
 
- let {op, lhs, rhs} = obj;
-console.log(op, lhs, rhs)
+//  let {op, lhs, rhs} = obj;
+// console.log(op, lhs, rhs)
 
 
 
