@@ -68,6 +68,12 @@
 //  let {op, lhs, rhs} = obj;
 // console.log(op, lhs, rhs)
 
+// function obj ([name1, val]){
+//     console.log(name1, val)
+// }
+// obj(["pak", 1])
 
-
-
+function obj ({name1: v, val: n}){
+    console.log(v, n)
+}
+obj({name1: "gullu", val: 1})
