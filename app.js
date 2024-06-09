@@ -59,7 +59,15 @@
 // let objkey = "key"
 // console.log(obj[objkey])
 
-let arr = [1,2,3]
-let [a, ,b] = arr;
-console.log(a, b)
+// let arr = [1,2,3]
+// let [a, ,b] = arr;
+// console.log([a, b] = [b, a])
+
+let obj = {op: 1, lhs: 2, rhs: 3}
+
+ let {op, lhs, rhs} = obj;
+console.log(op, lhs, rhs)
+
+
+
 
