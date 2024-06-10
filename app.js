@@ -170,16 +170,31 @@ class Totaling{
     constructor(prices){
         this.prices = prices
     }
-    getTotal(){
+    set val(str ){
+        if(str && str[0] === "A"){
+        this._val = str
+    }
+    }
+
+    get val (){
+        return this._val
+    }
+
+   get getTotal(){
         return this.prices.reduce((preVAl, currVal)=>{
                 return preVAl + currVal
         }, 0)
     }
 }
+
+
 const data = new Totaling([120,130,140,150])
-console.log(data.getTotal())
+// console.log(data.getTotal)
 
-
+ data.val = "work"
+ data.val = "Apple"
+ data.val = "Banana"
+console.log(data.val)
 
 
 
