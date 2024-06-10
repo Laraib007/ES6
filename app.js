@@ -73,7 +73,47 @@
 // }
 // obj(["pak", 1])
 
-function obj ({name1: v, val: n}){
-    console.log(v, n)
+// function obj ({name1: v, val: n}){
+//     console.log(v, n)
+// }
+// obj({name1: "gullu", val: 1})
+
+
+// class Products{
+//     constructor(name, price){
+//         this.name = name;
+//         this.price = price;
+//     }
+//     displayProducts(){
+//         console.log(`Product: ${this.name}`)
+//         console.log(`Price: Rs.${this.price}`)
+//     }
+// }
+// const product1 = new Products("Shirt", 250)
+
+// product1.displayProducts()
+
+class Product{
+    constructor(name, price){
+        this.name = name;
+        this.price = price;
+    }
+    displayProducts(){
+        console.log(`Product: ${this.name}`)
+        console.log(`Price: Rs.${this.price}`)
+    }
 }
-obj({name1: "gullu", val: 1})
+
+const product1 = new Product("shirt", 250)
+const product2 = new Product("pant", 650)
+product1.displayProducts();
+product2.displayProducts()
+
+
+
+
+
+
+
+
+
