@@ -140,6 +140,16 @@
 
 
 class Datasaver{
+
+        constructor(prices){
+         this.prices = prices
+        }
+        getTotal(){
+            return this.prices.reduce((curVal, preVal)=>{
+                    return curVal + preVal;
+            }, 0);
+        }
+
     static save(name, data){
         const json = JSON.stringify(data)
         localStorage.setItem(name, json)
@@ -149,10 +159,11 @@ class Datasaver{
         return JSON.parse(json)
     }
 }
-
-Datasaver.save("name", "key1")
-const data = Datasaver.get("name")
-console.log(data)
+const total = new Datasaver([120,130,140])
+console.log(total.getTotal())
+// Datasaver.save("name", "key1")
+// const data = Datasaver.get("name")
+// console.log(data)
 
 
 
