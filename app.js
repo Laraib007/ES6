@@ -125,6 +125,53 @@
 // product1.displayProducts1()
 
 
+// class Datasaver{
+//    static save(name, data){
+//         const json = JSON.stringify(data);
+//         localStorage.setItem(name, json)
+//     }
+
+//    static get(name){
+//        const json = localStorage.getItem(name);
+//         return JSON.parse(json)
+//     }
+// }
+// Datasaver.save("obj", "key")
+
+
+class Datasaver{
+    static save(name, data){
+        const json = JSON.stringify(data)
+        localStorage.setItem(name, json)
+    }
+    static get(name){
+        const json = localStorage.getItem(name)
+        return JSON.parse(json)
+    }
+}
+
+Datasaver.save("name", "key1")
+const data = Datasaver.get("name")
+console.log(data)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
