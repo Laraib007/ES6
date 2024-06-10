@@ -139,31 +139,105 @@
 // Datasaver.save("obj", "key")
 
 
-class Datasaver{
+// class Datasaver{
 
-        constructor(prices){
-         this.prices = prices
-        }
-        getTotal(){
-            return this.prices.reduce((curVal, preVal)=>{
-                    return curVal + preVal;
-            }, 0);
-        }
+//         constructor(prices){
+//          this.prices = prices
+//         }
+//         getTotal(){
+//             return this.prices.reduce((curVal, preVal)=>{
+//                     return curVal + preVal;
+//             }, 0);
+//         }
 
-    static save(name, data){
-        const json = JSON.stringify(data)
-        localStorage.setItem(name, json)
-    }
-    static get(name){
-        const json = localStorage.getItem(name)
-        return JSON.parse(json)
-    }
-}
-const total = new Datasaver([120,130,140])
-console.log(total.getTotal())
+//     static save(name, data){
+//         const json = JSON.stringify(data)
+//         localStorage.setItem(name, json)
+//     }
+//     static get(name){
+//         const json = localStorage.getItem(name)
+//         return JSON.parse(json)
+//     }
+// }
+// const total = new Datasaver([120,130,140])
+// console.log(total.getTotal())
 // Datasaver.save("name", "key1")
 // const data = Datasaver.get("name")
 // console.log(data)
+
+
+class Totaling{
+    constructor(prices){
+        this.prices = prices
+    }
+    getTotal(){
+        return this.prices.reduce((preVAl, currVal)=>{
+                return preVAl + currVal
+        }, 0)
+    }
+}
+const data = new Totaling([120,130,140,150])
+console.log(data.getTotal())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
