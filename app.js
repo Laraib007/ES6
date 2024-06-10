@@ -93,23 +93,36 @@
 
 // product1.displayProducts()
 
-class Product{
-    constructor(name, price){
-        this.name = name;
-        this.price = price;
-    }
-    displayProducts(){
-        console.log(`Product: ${this.name}`)
-        console.log(`Price: Rs.${this.price}`)
-    }
-}
+// class Product{
+//     constructor(name, price){
+//         this.name = name;
+//         this.price = price;
+//     }
+//     // displayProducts(){
+//     //     console.log(`Product: ${this.name}`)
+//     //     console.log(`Price: Rs.${this.price}`)
+//     // }
+// }
 
-const product1 = new Product("shirt", 250)
-const product2 = new Product("pant", 650)
-product1.displayProducts();
-product2.displayProducts()
+// const product1 = new Product("shirt", 250)
+// const product2 = new Product("pant", 650)
+// product1.displayProducts();
+// product2.displayProducts()
 
+// class Child extends Product{
+//     constructor(name, price, color){
+//         super(name, price)
+//         this.color = color;
+//     }
+//     displayProducts1(){
+//         console.log(`Product: ${this.name}`);
+//         console.log(`Price: Rs.${this.price}`)
+//         console.log(`Color: ${this.color}`)
+//     }
+// }
+// const product1 = new Child("Suit", 1000, "White")
 
+// product1.displayProducts1()
 
 
 
