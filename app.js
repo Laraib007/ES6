@@ -196,7 +196,7 @@
 //  data.val = "Banana"
 // console.log(data.val)
 
-// let p = new Promise((resolve, reject)=>{
+// let p1 = new Promise((resolve, reject)=>{
 //     console.log("i am pending")
 //     setTimeout(()=>{
 //         console.log("working fulfiled")
@@ -204,11 +204,21 @@
 //     reject(new Error("i am an error"))
 //     }, 2000)
 // })
-// p.catch((error)=>{
+// p1.catch((error)=>{
 //     console.log("somthing is worng")
 // })
 
-
+let p = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+    console.log("worko")
+    resolve(56)
+   }, 2000)
+})
+p.then( ()=>{
+    setTimeout(()=>{
+        return console.log("working")}, 2000)
+})
+   
 
 
 
