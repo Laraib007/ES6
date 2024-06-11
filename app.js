@@ -166,37 +166,47 @@
 // console.log(data)
 
 
-class Totaling{
-    constructor(prices){
-        this.prices = prices
-    }
-    set val(str ){
-        if(str && str[0] === "A"){
-        this._val = str
-    }
-    }
+// class Totaling{
+//     constructor(prices){
+//         this.prices = prices
+//     }
+//     set val(str ){
+//         if(str && str[0] === "A"){
+//         this._val = str
+//     }
+//     }
 
-    get val (){
-        return this._val
-    }
+//     get val (){
+//         return this._val
+//     }
 
-   get getTotal(){
-        return this.prices.reduce((preVAl, currVal)=>{
-                return preVAl + currVal
-        }, 0)
-    }
-}
-
-
-const data = new Totaling([120,130,140,150])
-// console.log(data.getTotal)
-
- data.val = "work"
- data.val = "Apple"
- data.val = "Banana"
-console.log(data.val)
+//    get getTotal(){
+//         return this.prices.reduce((preVAl, currVal)=>{
+//                 return preVAl + currVal
+//         }, 0)
+//     }
+// }
 
 
+// const data = new Totaling([120,130,140,150])
+// // console.log(data.getTotal)
+
+//  data.val = "work"
+//  data.val = "Apple"
+//  data.val = "Banana"
+// console.log(data.val)
+
+// let p = new Promise((resolve, reject)=>{
+//     console.log("i am pending")
+//     setTimeout(()=>{
+//         console.log("working fulfiled")
+
+//     reject(new Error("i am an error"))
+//     }, 2000)
+// })
+// p.catch((error)=>{
+//     console.log("somthing is worng")
+// })
 
 
 
