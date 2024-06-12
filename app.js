@@ -369,7 +369,7 @@ let p3 = new Promise((resolve, reject)=>{
     },3000)
 })
 
-let allPromises = Promise.all([p1, p2, p3])
+let allPromises = Promise.allSettled([p1, p2, p3])
 allPromises.then((value)=>{
     console.log(value)
 })
