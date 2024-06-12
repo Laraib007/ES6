@@ -270,23 +270,96 @@
 
 
 
-let p = new Promise((resolve, reject)=> {
+// let p = new Promise((resolve, reject)=> {
     
-    setTimeout(()=>{
-        console.log("Working" )
-        resolve(1)
-    }, 2000)
+//     setTimeout(()=>{
+//         console.log("Working" )
+//         resolve(1)
+//     }, 2000)
 
-}) 
-p.then(()=>{
-    setTimeout(()=>{
-      return  console.log("2nd Layer")
-    }, 2000)
-}).then(()=>{
-    setTimeout(()=>{
-    return console.log("3rd Layer")
-    }, 2000)
+// }) 
+// p.then(()=>{
+//     setTimeout(()=>{
+//       return  console.log("2nd Layer")
+//     }, 2000)
+// }).then(()=>{
+//     setTimeout(()=>{
+//     return console.log("3rd Layer")
+//     }, 2000)
+// })
+
+
+// const loadScript = (src)=>{
+//         return new Promise((resolve, reject)=>{
+//             let script = document.createElement("script")
+//             script.type = "text/javascript"
+//             script.src = src
+//          document.body.appendChild(script)
+//             script.onload=()=>{
+//                 resolve(1)
+//             }
+//             script.onerror=()=>{reject(0)}
+//         })
+// }
+
+// let p1 = loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js")
+// p1.then((value)=>{
+//     console.log(value)
+//  })
+// //.catch((error)=>{
+// //     console.log("error")
+// // })
+
+
+// const loadScript = (src)=>{
+//     return new Promise((resolve, reject)=>{
+//         let script = document.createElement("script")
+//         script.type = "text/javascript"
+//         script.src = src
+//      document.body.appendChild(script)
+//         script.onload=()=>{
+//             resolve(1)
+//         }
+//         script.onerror=()=>{reject(0)}
+//     })
+// }
+
+// let p1 = loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js")
+// p1.then((value)=>{
+// console.log("Script Founded")
+// }).catch(()=>{
+//     console.log("Not found")
+// })
+
+const loadScript = (src)=>{
+    return new Promise((resolve, reject)=>{
+         let script = document.createElement("script")
+         script.type = "text/javascript"
+         script.src = src
+         document.body.appendChild(script)
+         script.onload=()=>{
+            resolve(1)
+         }
+          script.onerror=()=>{reject(0)}
+    })
+}
+
+let p1 = loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js")
+p1.then(()=>{
+    console.log("Script Worked")
+}).catch(()=>{
+    console.log("Script Not Found")
 })
+
+
+
+
+
+
+
+
+
+
 
 
 
