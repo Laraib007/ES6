@@ -351,7 +351,28 @@
 //     console.log("Script Not Found")
 // })
 
+let p1 = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+        resolve("done")
+    },1000)
+})
 
+let p2 = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+        reject("done 2")
+    },2000)
+})
+
+let p3 = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+        resolve("done 3")
+    },3000)
+})
+
+let allPromises = Promise.all([p1, p2, p3])
+allPromises.then((value)=>{
+    console.log(value)
+})
 
 
 
