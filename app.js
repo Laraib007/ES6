@@ -454,10 +454,14 @@
 
 
 try{
-    console.log(labi)
+    let age = prompt("What is your age")
+    age = Number.parseInt(age)
+    if(age >= 150){
+        throw new error("This is not true")
+    }
 }
-catch(err){
-    console.log("Error")
+catch(error){
+    console.log(error.name)
 }
 
 
