@@ -453,8 +453,12 @@
 // main1()
 
 
-
-
+try{
+    console.log(labi)
+}
+catch(err){
+    console.log("Error")
+}
 
 
 
