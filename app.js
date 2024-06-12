@@ -93,6 +93,54 @@
 
 // product1.displayProducts()
 
+
+
+// class Product{
+//     constructor(name, val){
+//         this.name = name
+//         this.val = val
+//     }
+//     displayProducts(){
+//         console.log(`Product: ${this.name}`)
+//         console.log(`Price: ${this.val}`)
+//     }
+// }
+// const product1 = new Product("Shirt", "260")
+// product1.displayProducts()
+
+// class Products{
+//     constructor(name, price){
+//         this.name = name;
+//         this.price = price;
+//     }
+//     displayProducts(){
+//         console.log(`Product: ${this.name}`)
+//         console.log(`Price: ${this.price}`)
+//     }
+// }
+// const product1 = new Products("Jacket", "$1000");
+// product1.displayProducts()
+
+// const product2 = new Products("Shirt", "$100");
+// product2.displayProducts()
+
+// class Book{
+//     constructor(name, auther, type, price){
+//         this.name = name
+//         this.auther = auther
+//         this.type = type
+//         this.price = price
+//     } 
+//     display(){
+//         console.log(`Name: ${this.name}`)
+//         console.log(`Auther: ${this.auther}`)
+//         console.log(`Type: ${this.type}`)
+//         console.log(`Price: ${this.price}`)
+//     }
+// }
+// const book1 = new Book("Urdu", "Alama Iqbal", "Poetry", "50.00")
+// book1.display()
+
 // class Product{
 //     constructor(name, price){
 //         this.name = name;
@@ -208,22 +256,37 @@
 //     console.log("somthing is worng")
 // })
 
-let p = new Promise((resolve, reject)=>{
-    setTimeout(()=>{
-    console.log("worko")
-    resolve(56)
-   }, 2000)
-})
-p.then( ()=>{
-    setTimeout(()=>{
-        return console.log("working")}, 2000)
-})
+// let p = new Promise((resolve, reject)=>{
+//     setTimeout(()=>{
+//     console.log("worko")
+//     resolve(56)
+//    }, 2000)
+// })
+// p.then( ()=>{
+//     setTimeout(()=>{
+//         return console.log("working")}, 2000)
+// })
    
 
 
 
+let p = new Promise((resolve, reject)=> {
+    
+    setTimeout(()=>{
+        console.log("Working" )
+        resolve(1)
+    }, 2000)
 
-
+}) 
+p.then(()=>{
+    setTimeout(()=>{
+      return  console.log("2nd Layer")
+    }, 2000)
+}).then(()=>{
+    setTimeout(()=>{
+    return console.log("3rd Layer")
+    }, 2000)
+})
 
 
 
