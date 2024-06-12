@@ -415,42 +415,42 @@
 // }
 // main1()
 
-let labi = async ()=>{
-    let p1 = new Promise((resolve, reject)=>{
-        setTimeout(()=>{
-            resolve(1)
-        }, 1000)
-    })
-    let p2 = new Promise((resolve, reject)=>{
-        setTimeout(()=>{
-            resolve(2)
-        }, 3000)
-    })
-    let p3 = new Promise((resolve, reject)=>{
-        setTimeout(()=>{
-            resolve(3)
-        }, 5000)
-    })
-    console.log("Hey P1 is starting...")
-    await p1
-    console.log("P1 Started")
-    console.log("Hey P2 is starting...")
-    await p2
-    console.log("P2 Started")
-    console.log("Hey P3 is starting...")
-    await p3
-    console.log("P3 Started")
-    return
-}  
-let cheery = async()=>{
-    console.log("I am Cheery and I am Waiting")
-}
+// let labi = async ()=>{
+//     let p1 = new Promise((resolve, reject)=>{
+//         setTimeout(()=>{
+//             resolve(1)
+//         }, 1000)
+//     })
+//     let p2 = new Promise((resolve, reject)=>{
+//         setTimeout(()=>{
+//             resolve(2)
+//         }, 3000)
+//     })
+//     let p3 = new Promise((resolve, reject)=>{
+//         setTimeout(()=>{
+//             resolve(3)
+//         }, 5000)
+//     })
+//     console.log("Hey P1 is starting...")
+//     await p1
+//     console.log("P1 Started")
+//     console.log("Hey P2 is starting...")
+//     await p2
+//     console.log("P2 Started")
+//     console.log("Hey P3 is starting...")
+//     await p3
+//     console.log("P3 Started")
+//     return
+// }  
+// let cheery = async()=>{
+//     console.log("I am Cheery and I am Waiting")
+// }
 
-let main1 = async ()=>{
-await labi()
-await cheery()
-}
-main1()
+// let main1 = async ()=>{
+// await labi()
+// await cheery()
+// }
+// main1()
 
 
 
