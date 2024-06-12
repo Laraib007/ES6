@@ -353,8 +353,8 @@
 
 let p1 = new Promise((resolve, reject)=>{
     setTimeout(()=>{
-        resolve("done")
-    },1000)
+        resorelve("done")
+    },11000)
 })
 
 let p2 = new Promise((resolve, reject)=>{
@@ -369,7 +369,7 @@ let p3 = new Promise((resolve, reject)=>{
     },3000)
 })
 
-let allPromises = Promise.allSettled([p1, p2, p3])
+let allPromises = Promise.any([p1, p2, p3])
 allPromises.then((value)=>{
     console.log(value)
 })
