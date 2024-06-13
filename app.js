@@ -583,9 +583,9 @@
 // postFunc()
 
 
-console.log(document.cookie)
+// console.log(document.cookie)
 
-
+// localStorage.setItem("as", "as")
 
 
 
