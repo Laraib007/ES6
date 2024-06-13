@@ -453,17 +453,19 @@
 // main1()
 
 
-try{
-    let age = prompt("What is your age")
-    age = Number.parseInt(age)
-    if(age >= 150){
-        throw new error("This is not true")
-    }
-}
-catch(error){
-    console.log(error.name)
-}
-
+// try{
+//     let age = prompt("What is your age")
+//     age = Number.parseInt(age)
+//     if(age >= 150){
+//         throw new error("This is not true")
+//     }
+// }
+// catch(error){
+//     console.log(error.name)
+// }
+// finally{
+//     console.log("working")
+// }
 
 
 
