@@ -583,7 +583,7 @@
 // postFunc()
 
 
-
+console.log(document.cookie)
 
 
 
