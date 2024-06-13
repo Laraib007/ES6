@@ -314,196 +314,196 @@
 // const loadScript = (src)=>{
 //     return new Promise((resolve, reject)=>{
 //         let script = document.createElement("script")
-//         script.type = "text/javascript"
-//         script.src = src
-//      document.body.appendChild(script)
-//         script.onload=()=>{
-//             resolve(1)
-//         }
-//         script.onerror=()=>{reject(0)}
-//     })
-// }
+// //         script.type = "text/javascript"
+// //         script.src = src
+// //      document.body.appendChild(script)
+// //         script.onload=()=>{
+// //             resolve(1)
+// //         }
+// //         script.onerror=()=>{reject(0)}
+// //     })
+// // }
 
-// let p1 = loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js")
-// p1.then((value)=>{
-// console.log("Script Founded")
-// }).catch(()=>{
-//     console.log("Not found")
-// })
+// // let p1 = loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js")
+// // p1.then((value)=>{
+// // console.log("Script Founded")
+// // }).catch(()=>{
+// //     console.log("Not found")
+// // })
 
-// const loadScript = (src)=>{
+// // const loadScript = (src)=>{
+// //     return new Promise((resolve, reject)=>{
+// //          let script = document.createElement("script")
+// //          script.type = "text/javascript"
+// //          script.src = src
+// //          document.body.appendChild(script)
+// //          script.onload=()=>{
+// //             resolve(1)
+// //          }
+// //           script.onerror=()=>{reject(0)}
+// //     })
+// // }
+
+// // let p1 = loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js")
+// // p1.then(()=>{
+// //     console.log("Script Worked")
+// // }).catch(()=>{
+// //     console.log("Script Not Found")
+// // })
+
+// // let p1 = new Promise((resolve, reject)=>{
+// //     setTimeout(()=>{
+// //         resorelve("done")
+// //     },11000)
+// // })
+
+// // let p2 = new Promise((resolve, reject)=>{
+// //     setTimeout(()=>{
+// //         reject("done 2")
+// //     },2000)
+// // })
+
+// // let p3 = new Promise((resolve, reject)=>{
+// //     setTimeout(()=>{
+// //         resolve("done 3")
+// //     },3000)
+// // })
+
+// // let allPromises = Promise.resolve([p1, p2, p3])
+// // allPromises.then((value)=>{
+// //     console.log(value)
+// // })
+
+// // let labi = async ()=>{
+// //     let p1 = new Promise((resolve, reject)=>{
+        
+// //        setTimeout(()=>{
+// //         resolve("I am P1")
+// //        }, 1000) 
+// //     })
+// //     let p2 = new Promise((resolve, reject)=>{
+        
+// //         setTimeout(()=>{
+// //             resolve("I am P2")
+// //            }, 3000) 
+// //     })
+// //     let p3 = new Promise((resolve, reject)=>{
+        
+// //         setTimeout(()=>{
+// //             resolve("I am P3")
+// //            }, 5000) 
+// //     })
+// //     console.log("P1 is Starting...")
+// //     let pp1 = await p1
+// //     console.log("Congrates P1 Started Successfully ")
+// //     console.log("P2 is Starting...")
+// //     let pp2 = await p2
+// //     console.log("Congrates P2 Started Successfully ")
+// //     console.log("P3 is Starting...")
+// //     let pp3 = await p3 
+// //     console.log("Congrates P3 Started Successfully ")
+// //     return [pp1, pp2, pp3] 
+// // }
+// // let cheery = async ()=>{
+// //     console.log("I am Cheery and i am not waiting")
+// // }
+// // let main1 = async ()  =>{
+// // let a = await labi()
+// // let b = await cheery()
+
+// // console.log(b)
+// // }
+// // main1()
+
+// // let labi = async ()=>{
+// //     let p1 = new Promise((resolve, reject)=>{
+// //         setTimeout(()=>{
+// //             resolve(1)
+// //         }, 1000)
+// //     })
+// //     let p2 = new Promise((resolve, reject)=>{
+// //         setTimeout(()=>{
+// //             resolve(2)
+// //         }, 3000)
+// //     })
+// //     let p3 = new Promise((resolve, reject)=>{
+// //         setTimeout(()=>{
+// //             resolve(3)
+// //         }, 5000)
+// //     })
+// //     console.log("Hey P1 is starting...")
+// //     await p1
+// //     console.log("P1 Started")
+// //     console.log("Hey P2 is starting...")
+// //     await p2
+// //     console.log("P2 Started")
+// //     console.log("Hey P3 is starting...")
+// //     await p3
+// //     console.log("P3 Started")
+// //     return
+// // }  
+// // let cheery = async()=>{
+// //     console.log("I am Cheery and I am Waiting")
+// // }
+
+// // let main1 = async ()=>{
+// // await labi()
+// // await cheery()
+// // }
+// // main1()
+
+
+// // try{
+// //     let age = prompt("What is your age")
+// //     age = Number.parseInt(age)
+// //     if(age >= 150){
+// //         throw new error("This is not true")
+// //     }
+// // }
+// // catch(error){
+// //     console.log(error.name)
+// // }
+// // finally{
+// //     console.log("working")
+// // }
+
+
+
+
+// let p1 = async ()=>{
 //     return new Promise((resolve, reject)=>{
-//          let script = document.createElement("script")
-//          script.type = "text/javascript"
-//          script.src = src
-//          document.body.appendChild(script)
-//          script.onload=()=>{
-//             resolve(1)
-//          }
-//           script.onerror=()=>{reject(0)}
-//     })
-// }
-
-// let p1 = loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js")
-// p1.then(()=>{
-//     console.log("Script Worked")
-// }).catch(()=>{
-//     console.log("Script Not Found")
-// })
-
-// let p1 = new Promise((resolve, reject)=>{
-//     setTimeout(()=>{
-//         resorelve("done")
-//     },11000)
-// })
-
-// let p2 = new Promise((resolve, reject)=>{
-//     setTimeout(()=>{
-//         reject("done 2")
-//     },2000)
-// })
-
-// let p3 = new Promise((resolve, reject)=>{
-//     setTimeout(()=>{
-//         resolve("done 3")
-//     },3000)
-// })
-
-// let allPromises = Promise.resolve([p1, p2, p3])
-// allPromises.then((value)=>{
-//     console.log(value)
-// })
-
-// let labi = async ()=>{
-//     let p1 = new Promise((resolve, reject)=>{
-        
-//        setTimeout(()=>{
-//         resolve("I am P1")
-//        }, 1000) 
-//     })
-//     let p2 = new Promise((resolve, reject)=>{
-        
 //         setTimeout(()=>{
-//             resolve("I am P2")
-//            }, 3000) 
+//             resolve(30)
+//         }, 2000)
 //     })
-//     let p3 = new Promise((resolve, reject)=>{
-        
+// }
+
+// let p2 = async ()=>{
+//     return new Promise((resolve, reject)=>{
 //         setTimeout(()=>{
-//             resolve("I am P3")
-//            }, 5000) 
+//             resolve(10)
+//         }, 4000)
 //     })
-//     console.log("P1 is Starting...")
-//     let pp1 = await p1
-//     console.log("Congrates P1 Started Successfully ")
-//     console.log("P2 is Starting...")
-//     let pp2 = await p2
-//     console.log("Congrates P2 Started Successfully ")
-//     console.log("P3 is Starting...")
-//     let pp3 = await p3 
-//     console.log("Congrates P3 Started Successfully ")
-//     return [pp1, pp2, pp3] 
 // }
-// let cheery = async ()=>{
-//     console.log("I am Cheery and i am not waiting")
-// }
-// let main1 = async ()  =>{
-// let a = await labi()
-// let b = await cheery()
 
-// console.log(b)
-// }
-// main1()
-
-// let labi = async ()=>{
-//     let p1 = new Promise((resolve, reject)=>{
+// let p3 = async ()=>{
+//     return new Promise((resolve, reject)=>{
 //         setTimeout(()=>{
-//             resolve(1)
-//         }, 1000)
+//             resolve(20)
+//         }, 2000)
 //     })
-//     let p2 = new Promise((resolve, reject)=>{
-//         setTimeout(()=>{
-//             resolve(2)
-//         }, 3000)
-//     })
-//     let p3 = new Promise((resolve, reject)=>{
-//         setTimeout(()=>{
-//             resolve(3)
-//         }, 5000)
-//     })
-//     console.log("Hey P1 is starting...")
-//     await p1
-//     console.log("P1 Started")
-//     console.log("Hey P2 is starting...")
-//     await p2
-//     console.log("P2 Started")
-//     console.log("Hey P3 is starting...")
-//     await p3
-//     console.log("P3 Started")
-//     return
-// }  
-// let cheery = async()=>{
-//     console.log("I am Cheery and I am Waiting")
 // }
 
-// let main1 = async ()=>{
-// await labi()
-// await cheery()
+// let promi = async()=>{
+//     let a1 = await p1()
+//     console.log(a1)
+//     let a2 = await p2()
+//     console.log(a2)
+//     let a3 = await p3()
+//     console.log(a3)
 // }
-// main1()
-
-
-// try{
-//     let age = prompt("What is your age")
-//     age = Number.parseInt(age)
-//     if(age >= 150){
-//         throw new error("This is not true")
-//     }
-// }
-// catch(error){
-//     console.log(error.name)
-// }
-// finally{
-//     console.log("working")
-// }
-
-
-
-
-let p1 = async ()=>{
-    return new Promise((resolve, reject)=>{
-        setTimeout(()=>{
-            resolve(30)
-        }, 2000)
-    })
-}
-
-let p2 = async ()=>{
-    return new Promise((resolve, reject)=>{
-        setTimeout(()=>{
-            resolve(10)
-        }, 4000)
-    })
-}
-
-let p3 = async ()=>{
-    return new Promise((resolve, reject)=>{
-        setTimeout(()=>{
-            resolve(20)
-        }, 2000)
-    })
-}
-
-let promi = async()=>{
-    let a1 = await p1()
-    console.log(a1)
-    let a2 = await p2()
-    console.log(a2)
-    let a3 = await p3()
-    console.log(a3)
-}
   
-promi()
+// promi()
 
 
 
