@@ -470,6 +470,55 @@
 
 
 
+let p1 = async ()=>{
+    return new Promise((resolve, reject)=>{
+        setTimeout(()=>{
+            resolve(30)
+        }, 2000)
+    })
+}
+
+let p2 = async ()=>{
+    return new Promise((resolve, reject)=>{
+        setTimeout(()=>{
+            resolve(10)
+        }, 4000)
+    })
+}
+
+let p3 = async ()=>{
+    return new Promise((resolve, reject)=>{
+        setTimeout(()=>{
+            resolve(20)
+        }, 2000)
+    })
+}
+
+let promi = async()=>{
+    let a1 = await p1()
+    console.log(a1)
+    let a2 = await p2()
+    console.log(a2)
+    let a3 = await p3()
+    console.log(a3)
+}
+  
+promi()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
