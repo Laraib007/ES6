@@ -519,30 +519,40 @@
 // }).then((result)=>{
 //     console.log(result.id)
 // })
+// let fetc = fetch("https://jsonplaceholder.typicode.com/todos/1")
+// fetc.then((res)=>{
+//           return  res.json()
+// }).then((resp)=>{
+//     console.log(resp.id)
+// })
 
+let createTodo =async (todo)=>{
+let option = {
+    method: "POST",
+    headers: {"Content-type": "application/json"},
+    body: JSON.stringify(todo),
+}
+let p = await fetch('https://jsonplaceholder.typicode.com/posts', option)
+ let response = await p.json()
+ return console.log(response)
+}
 
-
-
-
-
-
-
-
-
-
-let fetc = fetch("https://jsonplaceholder.typicode.com/todos/1")
-fetc.then((res)=>{
-          return  res.json()
-}).then((resp)=>{
-    console.log(resp.id)
-})
-
-
-
-
-
-
-
+let getTodo = async(id)=>{
+    let response = await fetch('https://jsonplaceholder.typicode.com/posts/'+ id)
+    let a = await response.json()
+    return a
+}
+let mainFunc = async()=>{
+    let todo = {
+        title: 'Labi',
+        body: 'Khan',
+        userId: 1,
+      }
+    let done = createTodo(todo)
+    console.log(await getTodo(6))
+    return done
+}
+mainFunc()
 
 
 
