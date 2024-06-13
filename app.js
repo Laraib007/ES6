@@ -526,44 +526,61 @@
 //     console.log(resp.id)
 // })
 
-let createTodo =async (todo)=>{
-let option = {
-    method: "POST",
-    headers: {"Content-type": "application/json"},
-    body: JSON.stringify(todo),
-}
-let p = await fetch('https://jsonplaceholder.typicode.com/posts', option)
- let response = await p.json()
- return console.log(response)
-}
+// let createTodo =async (todo)=>{
+// let option = {
+//     method: "POST",
+//     headers: {"Content-type": "application/json"},
+//     body: JSON.stringify(todo),
+// }
+// let p = await fetch('https://jsonplaceholder.typicode.com/posts', option)
+//  let response = await p.json()
+//  return console.log(response)
+// }
 
-let getTodo = async(id)=>{
-    let response = await fetch('https://jsonplaceholder.typicode.com/posts/'+ id)
-    let a = await response.json()
-    return a
-}
-let mainFunc = async()=>{
-    let todo = {
-        title: 'Labi',
-        body: 'Khan',
-        userId: 1,
-      }
-    let done = createTodo(todo)
-    console.log(await getTodo(6))
-    return done
-}
-mainFunc()
-
-
+// let getTodo = async(id)=>{
+//     let response = await fetch('https://jsonplaceholder.typicode.com/posts/'+ id)
+//     let a = await response.json()
+//     return a
+// }
+// let mainFunc = async()=>{
+//     let todo = {
+//         title: 'Labi',
+//         body: 'Khan',
+//         userId: 1,
+//       }
+//     let done = createTodo(todo)
+//     console.log(await getTodo(6))
+//     return done
+// }
+// mainFunc()
 
 
-
-
-
-
-
-
-
+// const createTodo =async(todo)=>{
+// let options = {
+//     method: "POST",
+//     headers: {"Content-type": "application/json"},
+//     body: JSON.stringify(todo)
+// }
+// let response = await fetch('https://jsonplaceholder.typicode.com/posts/', options)
+//   let a = await response.json()
+//   return console.log(a)
+// }
+// let getTodo = async(id)=>{
+//    let response = await fetch('https://jsonplaceholder.typicode.com/posts/' + id)
+//   let a = await response.json()
+//   return a
+// }
+// let postFunc =async()=>{
+//     let todo =    {
+//         title: 'Labi',
+//         body: 'Khan',
+//         userId: 1,
+//       }
+//       console.log(await getTodo(3))
+//     return createTodo(todo)
+    
+// }
+// postFunc()
 
 
 
