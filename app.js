@@ -530,6 +530,20 @@
 
 
 
+let fetc = fetch("https://jsonplaceholder.typicode.com/todos/1")
+fetc.then((res)=>{
+          return  res.json()
+}).then((resp)=>{
+    console.log(resp.id)
+})
+
+
+
+
+
+
+
+
 
 
 
