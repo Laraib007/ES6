@@ -506,8 +506,12 @@
 // promi()
 
 
-
-
+let ok = fetch("https://jsonplaceholder.typicode.com/todos/5")
+ok.then((res)=>{
+   return res.json()
+}).then((res2)=>{
+    console.log(res2.userId)
+})
 
 
 
