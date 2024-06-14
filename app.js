@@ -606,7 +606,7 @@ let response = fetch(url)
           <p>Price: $${v[item].price}</p>
           <p>category: ${v[item].category}</p>
           <p>quantity avalabile: ${v[item].quantity}</p>
-          <a href="#" class="btn btn-primary">Buy Now!</a>
+          <a href="#" class="btn btn-primary">Buy Now</a>
         </div>
       </div>
     `
