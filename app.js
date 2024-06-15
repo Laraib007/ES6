@@ -682,7 +682,18 @@
 //   }
 // })()
 
-
+let day = prompt("Enter Day").toLocaleLowerCase();
+switch (day) {
+    case "sunday":
+        console.log("Its Sunday")
+        break;
+        case "monday":
+            console.log("Its Monday")
+            break;
+    default:
+        console.log("Not a Valid Day!")
+        break;
+}
 
 
 
