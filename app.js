@@ -695,15 +695,16 @@
 //         break;
 // }
 
-let day = prompt("Enter Day").toLocaleLowerCase();
-let day2 = prompt("Enter Day").toLocaleLowerCase();
-if(day === "sunday" && day2 === "monday"){
-    console.log("Worked")
-} else console.log("Not worked")
+// let day = prompt("Enter Day").toLocaleLowerCase();
+// let day2 = prompt("Enter Day").toLocaleLowerCase();
+// if(day === "sunday" && day2 === "monday"){
+//     console.log("Worked")
+// } else console.log("Not worked")
 
+let a = prompt("write age")
+let age = a < 18 ? "You can't Drive" : "You Can drive"
 
-
-
+console.log(age)
 
 
 
