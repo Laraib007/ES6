@@ -716,14 +716,19 @@
 //     console.log(`The Marks of ${a} is ${obj[a]}`)
 // }
 
+// let n = 4
+// i = 0
+// while(i<n){
+//     console.log(i)
+//     i++
+// }
+
 let n = 4
-i = 0
-while(i<n){
+i = 9
+do{
     console.log(i)
     i++
-}
-
-
+}while(i<n)
 
 
 
