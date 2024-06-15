@@ -707,16 +707,21 @@
 // console.log(age)
 
 
-let obj = {
-    Labi: 90,
-    khan: 85,
-    LRB: 89
-}
-for(let a in obj){
-    console.log(`The Marks of ${a} is ${obj[a]}`)
-}
+// let obj = {
+//     Labi: 90,
+//     khan: 85,
+//     LRB: 89
+// }
+// for(let a in obj){
+//     console.log(`The Marks of ${a} is ${obj[a]}`)
+// }
 
-
+let n = 4
+i = 0
+while(i<n){
+    console.log(i)
+    i++
+}
 
 
 
