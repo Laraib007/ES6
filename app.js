@@ -697,7 +697,7 @@
 
 let day = prompt("Enter Day").toLocaleLowerCase();
 let day2 = prompt("Enter Day").toLocaleLowerCase();
-if(day === "sunday" || day2 === "monday"){
+if(day === "sunday" && day2 === "monday"){
     console.log("Worked")
 } else console.log("Not worked")
 
