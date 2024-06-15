@@ -701,14 +701,20 @@
 //     console.log("Worked")
 // } else console.log("Not worked")
 
-let a = prompt("write age")
-let age = a < 18 ? "You can't Drive" : "You Can drive"
+// let a = prompt("write age")
+// let age = a < 18 ? "You can't Drive" : "You Can drive"
 
-console.log(age)
-
-
+// console.log(age)
 
 
+let obj = {
+    Labi: 90,
+    khan: 85,
+    LRB: 89
+}
+for(let a in obj){
+    console.log(`The Marks of ${a} is ${obj[a]}`)
+}
 
 
 
