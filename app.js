@@ -682,19 +682,24 @@
 //   }
 // })()
 
-let day = prompt("Enter Day").toLocaleLowerCase();
-switch (day) {
-    case "sunday":
-        console.log("Its Sunday")
-        break;
-        case "monday":
-            console.log("Its Monday")
-            break;
-    default:
-        console.log("Not a Valid Day!")
-        break;
-}
+// let day = prompt("Enter Day").toLocaleLowerCase();
+// switch (day) {
+//     case "sunday":
+//         console.log("Its Sunday")
+//         break;
+//         case "monday":
+//             console.log("Its Monday")
+//             break;
+//     default:
+//         console.log("Not a Valid Day!")
+//         break;
+// }
 
+let day = prompt("Enter Day").toLocaleLowerCase();
+let day2 = prompt("Enter Day").toLocaleLowerCase();
+if(day === "sunday" || day2 === "monday"){
+    console.log("Worked")
+} else console.log("Not worked")
 
 
 
