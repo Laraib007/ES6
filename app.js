@@ -723,18 +723,25 @@
 //     i++
 // }
 
-let n = 4
-i = 9
-do{
-    console.log(i)
-    i++
-}while(i<n)
+// let n = 4
+// i = 9
+// do{
+//     console.log(i)
+//     i++
+// }while(i<n)
 
-
-
-
-
-
+// let cn = 4
+// let i 
+// while (i != cn){
+//     console.log("Try Again")
+//     i = prompt("Enter the number")
+// }
+console.log("Congrets You Guess the Correct Number!")
+console.log("Bana\'na")
+console.log("Bana\"na")
+console.log("Bana\nna")
+console.log("Bana\tna")
+console.log("Bana\rna")
 
 
 
