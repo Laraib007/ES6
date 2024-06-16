@@ -736,15 +736,18 @@
 //     console.log("Try Again")
 //     i = prompt("Enter the number")
 // }
-console.log("Congrets You Guess the Correct Number!")
-console.log("Bana\'na")
-console.log("Bana\"na")
-console.log("Bana\nna")
-console.log("Bana\tna")
-console.log("Bana\rna")
+// console.log("Congrets You Guess the Correct Number!")
+// console.log("Bana\'na")
+// console.log("Bana\"na")
+// console.log("Bana\nna")
+// console.log("Bana\tna")
+// console.log("Bana\rna")
 
+let labi = "My name is Lrb"
 
-
+for(let i = 0; i < labi.length; i++){
+    console.log(labi[i])
+}
 
 
 
