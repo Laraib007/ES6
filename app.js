@@ -769,9 +769,12 @@ let num = [1, 62, 23, 4, 15, 6, 76, 58, 9, 3]
 // num.toString()
 // console.log(num.sort())
 
-num.push(67)
-console.log(num)
+// num.push(67)
+// console.log(num)
 
+num.forEach((i)=>{
+ console.log(i * i)
+})
 
 
 
