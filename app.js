@@ -793,10 +793,12 @@ let num2 = num.map((r)=>{
 let num3 = num.filter((val)=>{
     return val<20
 })
-console.log(num3)
+// console.log(num3)
 
-
-
+let num4 = num.reduce((h1, h2)=>{
+        return h1 + h2
+})
+console.log(num4)
 
 
 
