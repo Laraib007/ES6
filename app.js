@@ -743,16 +743,18 @@
 // console.log("Bana\tna")
 // console.log("Bana\rna")
 
-let labi = "My name is Lrb"
+// let labi = "My name is Lrb"
 
-for(let i = 0; i < labi.length; i++){
-    console.log(labi[i])
+// for(let i = 0; i < labi.length; i++){
+//     console.log(labi[i])
+// }
+
+let arr = ["Lrb", "Khan", "Labi"]
+// console.log(arr)
+
+for(let i = 0; i<arr.length; i++){
+    console.log(arr[i])
 }
-
-
-
-
-
 
 
 
