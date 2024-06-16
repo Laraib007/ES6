@@ -749,17 +749,20 @@
 //     console.log(labi[i])
 // }
 
-let arr = ["Lrb", "Khan", "Labi"]
-// console.log(arr)
+// let arr = ["Lrb", "Khan", "Labi"]
+// // console.log(arr)
 
-for(let i = 0; i<arr.length; i++){
-    console.log(arr[i])
-}
+// for(let i = 0; i<arr.length; i++){
+//     console.log(arr[i])
+// }
 
-
-
-
-
+let arr = ["A", "B", "C"]
+console.log(arr.push("1"))
+console.log(arr.pop())
+console.log(arr.shift("1"))
+console.log(arr.unshift("1"))
+console.log(arr.join("1"))
+console.log(arr.slice(2, 4))
 
 
 
