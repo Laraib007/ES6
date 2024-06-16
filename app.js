@@ -756,19 +756,21 @@
 //     console.log(arr[i])
 // }
 
-let arr = ["A", "B", "C"]
-console.log(arr.push("1"))
-console.log(arr.pop())
-console.log(arr.shift("1"))
-console.log(arr.unshift("1"))
-console.log(arr.join("1"))
-console.log(arr.slice(2, 4))
+// let arr = ["A", "B", "C"]
+// console.log(arr.push("1"))
+// console.log(arr.pop())
+// console.log(arr.shift("1"))
+// console.log(arr.unshift("1"))
+// console.log(arr.join("1"))
+// console.log(arr.slice(2, 4))
 
+let num = [1, 62, 23, 4, 15, 6, 76, 58, 9, 3]
+//  console.log(num.sort())
+// num.toString()
+// console.log(num.sort())
 
-
-
-
-
+num.push(67)
+console.log(num)
 
 
 
