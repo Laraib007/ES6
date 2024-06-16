@@ -764,7 +764,7 @@
 // console.log(arr.join("1"))
 // console.log(arr.slice(2, 4))
 
-let num = [1, 62, 23, 4, 15, 6, 76, 58, 9, 3]
+let num = [1, 62, 23, 4, 15, 6, 76, 58, 9, 3, 9]
 //  console.log(num.sort())
 // num.toString()
 // console.log(num.sort())
@@ -772,10 +772,17 @@ let num = [1, 62, 23, 4, 15, 6, 76, 58, 9, 3]
 // num.push(67)
 // console.log(num)
 
-num.forEach((i)=>{
- console.log(i * i)
-})
+// num.forEach((i)=>{
+//  console.log(i * i)
+// })
 
+// for(let i in num){
+//     console.log(num[i])
+// }
+
+for(let o of num){
+    console.log(o)
+}
 
 
 
