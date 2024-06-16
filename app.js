@@ -790,7 +790,10 @@ let num2 = num.map((r)=>{
 })
 // console.log(num2)
 
-
+let num3 = num.filter((val)=>{
+    return val<20
+})
+console.log(num3)
 
 
 
