@@ -784,21 +784,51 @@
 //     console.log(o)
 // }
 
-let num = [1, 62, 23, 4, 15, 6, 76, 58, 9, 3, 9]
-let num2 = num.map((r)=>{
-    return r * r
-})
-// console.log(num2)
+// let num = [1, 62, 23, 4, 15, 6, 76, 58, 9, 3, 9]
+// let num2 = num.map((r)=>{
+//     return r * r
+// })
+// // console.log(num2)
 
-let num3 = num.filter((val)=>{
-    return val<20
-})
-// console.log(num3)
+// let num3 = num.filter((val)=>{
+//     return val<20
+// })
+// // console.log(num3)
 
-let num4 = num.reduce((h1, h2)=>{
-        return h1 + h2
-})
-console.log(num4)
+// let num4 = num.reduce((h1, h2)=>{
+//         return h1 + h2
+// })
+// console.log(num4)
+
+console.log("log")
+console.error("error")
+console.info("info")
+console.warn("warning")
+console.assert("assert" != false)
+console.time()
+console.table({ok: "ok", op: "op", asap: "ASAP"})
+console.timeEnd()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
