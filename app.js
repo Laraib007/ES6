@@ -840,12 +840,17 @@
 
 // prompt("Enter a Number", 56)
 
-let con = confirm("are you sure to want delete it")
-if(con){
-    document.write("Deleted")
-} else document.write("please allow us to make change in your account")
+// let con = confirm("are you sure to want delete it")
+// if(con){
+//     document.write("Deleted")
+// } else document.write("please allow us to make change in your account")
 
+let num = prompt("enter your age")
+num = Number.parseInt(num)
 
+if(num > 4){
+    location.href = "https://google.com"
+}
 
 
 
