@@ -845,12 +845,27 @@
 //     document.write("Deleted")
 // } else document.write("please allow us to make change in your account")
 
-let num = prompt("enter your age")
-num = Number.parseInt(num)
+// let num = prompt("enter your age")
+// num = Number.parseInt(num)
 
-if(num > 4){
-    location.href = "https://google.com"
-}
+// if(num > 4){
+//     location.href = "https://google.com"
+// }
+
+let color = prompt("enter background color you want to change")
+document.body.style.background = color
+
+console.log(color)
+
+
+
+
+
+
+
+
+
+
 
 
 
