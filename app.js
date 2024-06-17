@@ -875,9 +875,13 @@ while(runAgain){
     // console.log(makeid(1))
     
     let userInp = prompt("enter S W or G")
-        if(userInp == makeid(1)){
-             console.log("You Win")
-        } else console.log("Sorry you lose")
+    if(userInp == "s" && makeid(1) == "w"){
+        console.log("You win" + " computer guess water")
+    } else if(userInp == "g" && makeid(1) == "s"){
+        console.log("You win" + " computer guess snake")
+    }else if(userInp == "w" && makeid(1) == "g"){
+        console.log("You win" + " computer guess gun")
+    } else console.log("sorry you lose " + "computer guess " + makeid(1))
         runAgain = confirm("You Want to play again")
 }
     
