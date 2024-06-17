@@ -809,39 +809,41 @@
 // console.table({ok: "ok", op: "op", asap: "ASAP"})
 // console.timeEnd()
 
-console.time()
-Num = 23
-for(let i =0; i<Num;i++){
+// console.time()
+// Num = 23
+// for(let i =0; i<Num;i++){
     
-    console.log(Num[i])
-}
-console.timeEnd()
+//     console.log(Num[i])
+// }
+// console.timeEnd()
 
-console.time()
+// console.time()
 
-Num2 = 23
-let i =0;
+// Num2 = 23
+// let i =0;
 
-while( i<Num2 ){
-    console.log(Num2[i])
-    i++
-}
-console.timeEnd()
-
-
-console.time()
-
-Num3 = [23,33,344,5,234,245,25,25,25,25]
-
-for(let i of Num3 ){
-    console.log(Num3[i])
-}
-console.timeEnd()
+// while( i<Num2 ){
+//     console.log(Num2[i])
+//     i++
+// }
+// console.timeEnd()
 
 
+// console.time()
 
+// Num3 = [23,33,344,5,234,245,25,25,25,25]
 
+// for(let i of Num3 ){
+//     console.log(Num3[i])
+// }
+// console.timeEnd()
 
+// prompt("Enter a Number", 56)
+
+let con = confirm("are you sure to want delete it")
+if(con){
+    document.write("Deleted")
+} else document.write("please allow us to make change in your account")
 
 
 
