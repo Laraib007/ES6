@@ -852,10 +852,51 @@
 //     location.href = "https://google.com"
 // }
 
-let color = prompt("enter background color you want to change")
-document.body.style.background = color
+// let color = prompt("enter background color you want to change")
+// document.body.style.background = color
 
-console.log(color)
+// console.log(color)
+
+let runAgain = true
+
+while(runAgain){
+    function makeid(length) {
+        let result = '';
+        const characters = 'swg';
+        const charactersLength = characters.length;
+        let counter = 0;
+        while (counter < length) {
+          result += characters.charAt(Math.floor(Math.random() * charactersLength));
+          counter += 1;
+        }
+        return result;
+    }
+    
+    // console.log(makeid(1))
+    
+    let userInp = prompt("enter S W or G")
+        if(userInp == makeid(1)){
+             console.log("You Win")
+        } else console.log("Sorry you lose")
+        runAgain = confirm("You Want to play again")
+}
+    
+
+
+
+
+
+// console.log(numToStr)
+
+
+
+
+
+
+
+
+
+
 
 
 
