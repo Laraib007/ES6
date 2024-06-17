@@ -800,22 +800,43 @@
 // })
 // console.log(num4)
 
-console.log("log")
-console.error("error")
-console.info("info")
-console.warn("warning")
-console.assert("assert" != false)
+// console.log("log")
+// console.error("error")
+// console.info("info")
+// console.warn("warning")
+// console.assert("assert" != false)
+// console.time()
+// console.table({ok: "ok", op: "op", asap: "ASAP"})
+// console.timeEnd()
+
 console.time()
-console.table({ok: "ok", op: "op", asap: "ASAP"})
+Num = 23
+for(let i =0; i<Num;i++){
+    
+    console.log(Num[i])
+}
+console.timeEnd()
+
+console.time()
+
+Num2 = 23
+let i =0;
+
+while( i<Num2 ){
+    console.log(Num2[i])
+    i++
+}
 console.timeEnd()
 
 
+console.time()
 
+Num3 = [23,33,344,5,234,245,25,25,25,25]
 
-
-
-
-
+for(let i of Num3 ){
+    console.log(Num3[i])
+}
+console.timeEnd()
 
 
 
