@@ -857,41 +857,37 @@
 
 // console.log(color)
 
-let runAgain = true
+// let runAgain = true
 
-while(runAgain){
-    function makeid(length) {
-        let result = '';
-        const characters = 'swg';
-        const charactersLength = characters.length;
-        let counter = 0;
-        while (counter < length) {
-          result += characters.charAt(Math.floor(Math.random() * charactersLength));
-          counter += 1;
-        }
-        return result;
-    }
+// while(runAgain){
+//     function makeid(length) {
+//         let result = '';
+//         const characters = 'swg';
+//         const charactersLength = characters.length;
+//         let counter = 0;
+//         while (counter < length) {
+//           result += characters.charAt(Math.floor(Math.random() * charactersLength));
+//           counter += 1;
+//         }
+//         return result;
+//     }
     
-    // console.log(makeid(1))
+//     // console.log(makeid(1))
     
-    let userInp = prompt("enter S W or G")
-    if(userInp == "s" && makeid(1) == "w"){
-        console.log("You win" + " computer guess water")
-    } else if(userInp == "g" && makeid(1) == "s"){
-        console.log("You win" + " computer guess snake")
-    }else if(userInp == "w" && makeid(1) == "g"){
-        console.log("You win" + " computer guess gun")
-    } else console.log("sorry you lose " + "computer guess " + makeid(1))
-        runAgain = confirm("You Want to play again")
-}
-    
-
-
-
-
-
+//     let userInp = prompt("enter S W or G")
+//     if(userInp == "s" && makeid(1) == "w"){
+//         console.log("You win" + " computer guess water")
+//     } else if(userInp == "g" && makeid(1) == "s"){
+//         console.log("You win" + " computer guess snake")
+//     }else if(userInp == "w" && makeid(1) == "g"){
+//         console.log("You win" + " computer guess gun")
+//     } else console.log("sorry you lose " + "computer guess " + makeid(1))
+//         runAgain = confirm("You Want to play again")
+// }
 // console.log(numToStr)
 
+let cTitle = document.getElementsByClassName("card-title")[0];
+cTitle.style.color = "red"
 
 
 
