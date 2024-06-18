@@ -892,10 +892,11 @@
 // let cTitle = document.querySelectorAll(".this");
 // cTitle[0].style.color = "orange"
 
-let cTitle = document.querySelector(".this", [0]);
-cTitle.style.color = "orange"
+// let cTitle = document.querySelector(".this", [0]);
+// cTitle.style.color = "orange"
 
-
+let cTitle = document.getElementById("firstCard");
+console.log(cTitle.matches("#firstCard"))
 
 
 
