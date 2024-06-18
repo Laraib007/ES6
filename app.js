@@ -886,8 +886,8 @@
 // }
 // console.log(numToStr)
 
-let cTitle = document.getElementsByClassName("card-title")[0];
-cTitle.style.color = "red"
+let cTitle = document.getElementById("firstCard");
+cTitle.style.color = "blue"
 
 
 
