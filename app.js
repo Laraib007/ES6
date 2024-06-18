@@ -889,10 +889,11 @@
 // let cTitle = document.getElementById("firstCard");
 // cTitle.style.color = "blue"
 
-let cTitle = document.querySelectorAll(".this");
-cTitle[0].style.color = "orange"
+// let cTitle = document.querySelectorAll(".this");
+// cTitle[0].style.color = "orange"
 
-
+let cTitle = document.querySelector(".this", [0]);
+cTitle.style.color = "orange"
 
 
 
