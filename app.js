@@ -967,8 +967,6 @@ let jokes = [
 "What happens when a strawberry gets run over crossing the street? Traffic jam.",
 "Why did the cow jump over the moon? The farmer had cold hands.",
 ]
-
-
 const disJokes = ()=>{
     let randomNum = Math.random() * 58
 let fixedNum  = randomNum.toFixed()
