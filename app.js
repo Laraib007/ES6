@@ -378,19 +378,19 @@
 // //     let p1 = new Promise((resolve, reject)=>{
         
 // //        setTimeout(()=>{
-// //         resolve("I am P1")
+// //         resolve(""I am P1")",
 // //        }, 1000) 
 // //     })
 // //     let p2 = new Promise((resolve, reject)=>{
         
 // //         setTimeout(()=>{
-// //             resolve("I am P2")
+// //             resolve(""I am P2")",
 // //            }, 3000) 
 // //     })
 // //     let p3 = new Promise((resolve, reject)=>{
         
 // //         setTimeout(()=>{
-// //             resolve("I am P3")
+// //             resolve(""I am P3")",
 // //            }, 5000) 
 // //     })
 // //     console.log("P1 is Starting...")
@@ -405,7 +405,7 @@
 // //     return [pp1, pp2, pp3] 
 // // }
 // // let cheery = async ()=>{
-// //     console.log("I am Cheery and i am not waiting")
+// //     console.log(""I am Cheery and i am not waiting")",
 // // }
 // // let main1 = async ()  =>{
 // // let a = await labi()
@@ -443,7 +443,7 @@
 // //     return
 // // }  
 // // let cheery = async()=>{
-// //     console.log("I am Cheery and I am Waiting")
+// //     console.log(""I am Cheery and "I am Waiting")",
 // // }
 
 // // let main1 = async ()=>{
@@ -454,7 +454,7 @@
 
 
 // // try{
-// //     let age = prompt("What is your age")
+// //     let age = prompt(""What is your age")",
 // //     age = Number.parseInt(age)
 // //     if(age >= 150){
 // //         throw new error("This is not true")
@@ -895,18 +895,96 @@
 // let cTitle = document.querySelector(".this", [0]);
 // cTitle.style.color = "orange"
 
-let cTitle = document.getElementById("firstCard");
-console.log(cTitle.matches("#firstCard"))
+// let cTitle = document.getElementById("firstCard");
+// console.log(cTitle.matches("#firstCard"))
+
+// Array.from(document.getElementsByTagName("li")).forEach(element => {
+//     element.style.background = "red"
+// });
+
+let jokes = [
+"What's the best thing about Switzerland? The flag is a big plus.",
+"I went to the aquarium this weekend, but I didn’t stay long. There’s something fishy about that place.",
+"I found a lion in my closet the other day! When I asked what it was doing there, it said “Narnia business.”",
+"What's a cat's favorite instrument? Purr-cussion.",
+"Why did the snail paint a giant S on his car? So when he drove by, people could say: “Look at that S car go!”",
+"What do you call a happy cowboy? A jolly rancher.",
+"What subject do cats like best in school? Hiss-tory.",
+"Humpty Dumpty had a great fall. He said his summer was pretty good too.",
+"Why should you never throw grandpa's false teeth at a vehicle? You might denture car.",
+"Why are Christmas trees bad at knitting? They always drop their needles.",
+"What did the lunch box say to the refrigerator? Don't hate me because I'm a little cooler.",
+"I can always tell when someone is lying. I can tell when they're standing too.",
+"Some people pick their nose, but I was born with mine.",
+"What's the coolest element in the periodic table? Ber-yllium",
+"I used to be afraid of speed bumps. I'm trying to get over it.",
+"If your house is cold, just stand in the corner. It’s always 90 degrees there.",
+"I don't recommend entering a wormhole. You might get stuck in the apple.",
+"The owner of the tuxedo store kept hovering over me when i was browsing, so I asked him to leave me alone. He said, “Fine, suit yourself.”",
+"Why did the egg have a day off? Because it was Fryday.",
+"Have you ever heard about the kidnapping at school? It's okay, he woke up.",
+"I found a book called How to Solve 50% of Your Problems. So I bought 2.",
+"What do Keanu Reeves and baby Yoda have in common? They age at the same rate.",
+"Why did the coffee taste like dirt? Because it was ground just a few minutes ago.",
+"Why can't you make a dinosaur omelet? Because they're egg-stinct.",
+"Why do quarterbacks tell obvious jokes? So they don't go over their receivers' heads.",
+"Why did the Rolling Stones stop making music? Because they got to bottom of the hill.",
+"What did one cupcake say to the other? You ain't see muffin yet.",
+"What is the best present? Broken drums! You can't beat them.",
+"Did you hear about the new squirrel diet? It's just nuts.",
+"I made song about tortilla once, now it's more like a wrap.",
+"Did you hear about the spatula's hot new flame? It met the grill of its dreams.",
+"What do call a criminal landing an airplane? Condescending.",
+"I decided to sell my vacuum cleaner. It was just gathering dust.",
+"I stayed up all night wondering where the sun went, and then it dawned on me.",
+"Why do people who live in Greece hate waking up at dawn? Because Dawn is tough on Greece.",
+"What falls, but never needs a bandage? The rain.",
+"I was going to tell you a joke about boxing but I forgot the punch line.",
+"I'm not a fan of spring cleaning. Let's be honest, I'm not into summer, fall, or winter cleaning either.",
+"Why did the egg hide? It was a little chicken.",
+"What did the dirt say to the rain? If you keep this up, my name will be mud!",
+"Why couldn't the sunflower ride its bike? It lost its petals.",
+"What's an egg's favorite vacation spot? New Yolk City.",
+"I ate a sock yesterday. It was very time-consuming.",
+"What kind of candy do astronauts like? Mars bars.",
+"I wanted to buy some camo pants but couldn't find any.",
+"I ordered a chicken and an egg from Amazon. I'll let you know.",
+"What month is the shortest of the year? May, it only has three letters.",
+"What did the snail who was riding on the turtle's back say? Wheeeee!",
+"I was going to tell a time traveling joke, but you guys didn't like it.",
+"What do you call a lazy kangaroo? A pouch potato.",
+"I used to run a dating service for chickens, but I was struggling to make hens meet.",
+"Why do we tell actors to break a leg? Because every play has a cast.",
+"What does a pig put on dry skin? Oinkment.",
+"What do you call it when a snowman throws a tantrum? A meltdown.",
+"What did one plate say to the other plate? Dinner's on me.",
+"Why do oranges wear sunscreen? So they don't peel.",
+"What do you call a pony with a sore throat? A little horse.",
+"What did the left eye say to the right eye? Between you and me, something smells.",
+"What did the mama tomato say to the baby tomato? Catch up!",
+"Why didn't the melons get married? Because they cantaloupe.",
+"What do you call a fake noodle? An impasta.",
+"What happens when a strawberry gets run over crossing the street? Traffic jam.",
+"Why did the cow jump over the moon? The farmer had cold hands.",
+]
 
 
-
-
-
-
-
-
-
-
+const disJokes = ()=>{
+    let randomNum = Math.random() * 58
+let fixedNum  = randomNum.toFixed()
+let finalRes = jokes[fixedNum]
+    ihtml = ""
+    ihtml += `
+<div class="card" style="width: 30rem; height: 12rem; ">
+  <div class="card-body my-2">
+    <h5 class="card-title">JOKE</h5>
+    <p class="card-text">${finalRes}</p>
+  </div>
+  <a onclick="disJokes()" class="btn btn-primary">NEW JOKES</a>
+</div>`
+Cards.innerHTML = ihtml
+}
+disJokes()
 
 
 
