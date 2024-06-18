@@ -886,10 +886,11 @@
 // }
 // console.log(numToStr)
 
-let cTitle = document.getElementById("firstCard");
-cTitle.style.color = "blue"
+// let cTitle = document.getElementById("firstCard");
+// cTitle.style.color = "blue"
 
-
+let cTitle = document.querySelectorAll(".this");
+cTitle[0].style.color = "orange"
 
 
 
