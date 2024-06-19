@@ -1,6 +1,4 @@
-body{
-    background: black;
-}
+
 .red{
     background: red;
     color: white;
@@ -8,4 +6,10 @@ body{
 .yellow{
     background: yellow;
     color: black;
+}
+
+.bulb{
+    height: 14rem;
+    background: yellow;
+    width: 20%;
 }

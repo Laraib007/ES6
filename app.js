@@ -1012,22 +1012,30 @@
 
 // first.className = ("yellow")
 
-let x = function(e){
-    alert("i am function 1")
-}
+// const x = function(e){
+//     console.log(e.target)
+//     console.log(e)
+//     // alert("working")
+//     // alert("i am function 1")
+// }
 
-let y = function(e){
-    alert("i am function 2")
-}
-btn.addEventListener("click", x)
-btn.addEventListener("click", y)
+// // let y = function(e){
+// //     alert("i am function 2")
+// // }
+// btn.addEventListener("click", x)
+// // btn.addEventListener("click", y)
 
-let userImp = prompt("enter 2")
-if(userImp == "2"){
-btn.removeEventListener("click",x)
-}
+// let userImp = prompt("enter 2")
+// if(userImp == "2"){
+// btn.removeEventListener("click",x)
+// }
 
 
+setInterval(()=>{
+
+    document.querySelector("#bulb").classList.toggle("bulb")
+    
+}, 300)
 
 
 
