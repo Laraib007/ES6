@@ -984,10 +984,37 @@
 // }
 // disJokes()
 
-let a = document.getElementById("ok")
-a.setAttribute("class", "tum ok")
+// let a = document.getElementById("ok")
+// a.setAttribute("class", "tum ok")
 
-document.firstElementChild.lastElementChild.firstElementChild.setAttribute("class", "working1")
+// document.firstElementChild.lastElementChild.firstElementChild.setAttribute("class", "working1")
+
+
+// let first = first.firstElementChild
+
+// first.setAttribute("class", "its working")
+
+
+
+let a = document.getElementsByTagName("div")[0]
+ a.innerHTML += "hello World2"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
