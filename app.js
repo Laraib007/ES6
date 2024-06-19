@@ -1010,12 +1010,22 @@
 // first.remove()
 
 
-first.className = ("yellow")
+// first.className = ("yellow")
 
+let x = function(e){
+    alert("i am function 1")
+}
 
+let y = function(e){
+    alert("i am function 2")
+}
+btn.addEventListener("click", x)
+btn.addEventListener("click", y)
 
-
-
+let userImp = prompt("enter 2")
+if(userImp == "2"){
+btn.removeEventListener("click",x)
+}
 
 
 
