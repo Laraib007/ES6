@@ -997,9 +997,11 @@
 
 
 let a = document.getElementsByTagName("div")[0]
- a.innerHTML += "hello World2"
+//  a.innerHTML += "hello World2"
 
-
+let div = document.createElement("div")
+div.innerHTML = "<h1>HELLO WORLD</h1>"
+a.appendChild(div)
 
 
 
