@@ -1037,32 +1037,71 @@
     
 // }, 300)
 
-let a = {
-    name: "Laraib",
-    language: "JavaScript",
-    run: ()=>{
-        document.write("Self Run")
-    } 
+// let a = {
+//     name: "Laraib",
+//     language: "JavaScript",
+//     run: ()=>{
+//         document.write("Self Run")
+//     } 
+// }
+
+// let p = {
+//     run: ()=>{
+//         document.write("Run from P")
+//     } 
+// }
+
+
+// p.__proto__ = {
+//     name2: "jack"
+// }
+//  let c = {
+//     name2: "Jack wala Oggy"
+//  }
+//  a.__proto__ = c
+
+
+// a.run()
+// console.log(a.name2)
+
+class Railway{
+    submitted(){
+            console.log(this.name + " form is submitted")
+    }
+
+    cancel(){
+        console.log(this.name + " form is canceled")
+}
+fill(name){
+    this.name = name;
 }
 
-let p = {
-    run: ()=>{
-        document.write("Run from P")
-    } 
 }
+let Laraib = new Railway();
+let LRB = new Railway()
+Laraib.fill("Laraib")
+Laraib.submitted()
+
+LRB.fill("LRB")
+LRB.cancel()
 
 
-p.__proto__ = {
-    name2: "jack"
-}
- let c = {
-    name2: "Jack wala Oggy"
- }
- a.__proto__ = c
 
 
-a.run()
-console.log(a.name2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
