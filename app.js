@@ -1039,7 +1039,10 @@
 
 let a = {
     name: "Laraib",
-    language: "JavaScript"
+    language: "JavaScript",
+    run: ()=>{
+        document.write("Self Run")
+    } 
 }
 
 let p = {
@@ -1047,10 +1050,19 @@ let p = {
         document.write("Run from P")
     } 
 }
-a.__proto__ = p
+
+
+p.__proto__ = {
+    name2: "jack"
+}
+ let c = {
+    name2: "Jack wala Oggy"
+ }
+ a.__proto__ = c
+
 
 a.run()
-
+console.log(a.name2)
 
 
 
