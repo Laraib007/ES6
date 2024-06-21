@@ -1076,10 +1076,15 @@ class Railway{
     cancel(){
         console.log(this.name + " form is canceled for Train No " + this.trainNo)
 }
+forSu(){
+    console.log("Checking")
+}
+
 
 }
 class h extends Railway{
     run(){
+        super.forSu()
         console.log(`Dear ${this.name} this trainNo ${this.trainNo} will run at 7PM sharp!`)
     }
 }
