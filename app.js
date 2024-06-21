@@ -1078,13 +1078,14 @@ class Railway{
 }
 
 }
-let Laraib = new Railway("Laraib", 897891);
-let LRB = new Railway("LRB", 878651)
+class h extends Railway{
+    run(){
+        console.log(`Dear ${this.name} this trainNo ${this.trainNo} will run at 7PM sharp!`)
+    }
+}
 
-Laraib.submitted()
-
-LRB.cancel()
-
+let lrb = new h("Lrb", 987)
+lrb.run()
 
 
 
