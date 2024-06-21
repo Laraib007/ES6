@@ -1031,19 +1031,25 @@
 // }
 
 
-setInterval(()=>{
+// setInterval(()=>{
 
-    document.querySelector("#bulb").classList.toggle("bulb")
+//     document.querySelector("#bulb").classList.toggle("bulb")
     
-}, 300)
+// }, 300)
 
+let a = {
+    name: "Laraib",
+    language: "JavaScript"
+}
 
+let p = {
+    run: ()=>{
+        document.write("Run from P")
+    } 
+}
+a.__proto__ = p
 
-
-
-
-
-
+a.run()
 
 
 
