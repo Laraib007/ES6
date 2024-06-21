@@ -1065,6 +1065,10 @@
 // console.log(a.name2)
 
 class Railway{
+    constructor(name, trainNo){
+        this.name = name;
+        this.trainNo = trainNo;
+    }
     submitted(){
             console.log(this.name + " form is submitted for Train No " + this.trainNo)
     }
@@ -1072,18 +1076,13 @@ class Railway{
     cancel(){
         console.log(this.name + " form is canceled for Train No " + this.trainNo)
 }
-fill(name, trainNo){
-    this.name = name;
-    this.trainNo = trainNo;
-}
 
 }
-let Laraib = new Railway();
-let LRB = new Railway()
-Laraib.fill("Laraib", 89789)
+let Laraib = new Railway("Laraib", 897891);
+let LRB = new Railway("LRB", 878651)
+
 Laraib.submitted()
 
-LRB.fill("LRB", 87865)
 LRB.cancel()
 
 
