@@ -1066,24 +1066,28 @@
 
 class Railway{
     constructor(name, trainNo){
-        this.name = Railway.capitilize(name) ; 
+        this._name = Railway.capitilize(name) ; 
         this.trainNo = trainNo;
     }
     submitted(){
             console.log(this.name + " form is submitted for Train No " + this.trainNo)
     }
 
-    cancel(){
-        console.log(this.name + " form is canceled for Train No " + this.trainNo)
-}
+    get name(){
+        return this._name
+    }
+    set name(name){
+        this._name = name
+    }
  static capitilize(name){
     return name.charAt(0).toUpperCase() + name.substr(1, name.length)
  }
 }
 
 let a = new Railway("aaaa")
-a.submitted()
-
+console.log(a.name)
+a.name = "bbbb"
+console.log(a.name)
 
 
 
