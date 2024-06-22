@@ -1064,30 +1064,41 @@
 // a.run()
 // console.log(a.name2)
 
-class Railway{
-    constructor(name, trainNo){
-        this._name = Railway.capitilize(name) ; 
-        this.trainNo = trainNo;
-    }
-    submitted(){
-            console.log(this.name + " form is submitted for Train No " + this.trainNo)
-    }
+// class Railway{
+//     constructor(name, trainNo){
+//         this._name = Railway.capitilize(name) ; 
+//         this.trainNo = trainNo;
+//     }
+//     submitted(){
+//             console.log(this.name + " form is submitted for Train No " + this.trainNo)
+//     }
 
-    get name(){
-        return this._name
-    }
-    set name(name){
-        this._name = name
-    }
- static capitilize(name){
-    return name.charAt(0).toUpperCase() + name.substr(1, name.length)
- }
-}
+//     get name(){
+//         return this._name
+//     }
+//     set name(name){
+//         this._name = name
+//     }
+//  static capitilize(name){
+//     return name.charAt(0).toUpperCase() + name.substr(1, name.length)
+//  }
+// }
 
-let a = new Railway("aaaa")
-console.log(a.name)
-a.name = "bbbb"
-console.log(a.name)
+// let a = new Railway("aaaa")
+// console.log(a.name)
+// a.name = "bbbb"
+// console.log(a.name)
+
+
+let arr = [1,2,3,4,5,6,7,8,9]
+let [a, , , ...rest] = arr;
+console.log(a, rest)
+
+
+
+
+
+
 
 
 
