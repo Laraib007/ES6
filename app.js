@@ -1066,7 +1066,7 @@
 
 class Railway{
     constructor(name, trainNo){
-        this.name = name;
+        this.name = Railway.capitilize(name) ; 
         this.trainNo = trainNo;
     }
     submitted(){
@@ -1076,26 +1076,13 @@ class Railway{
     cancel(){
         console.log(this.name + " form is canceled for Train No " + this.trainNo)
 }
-forSu(){
-    console.log("Checking")
+ static capitilize(name){
+    return name.charAt(0).toUpperCase() + name.substr(1, name.length)
+ }
 }
 
-
-}
-class h extends Railway{
-    run(){
-        super.forSu()
-        console.log(`Dear ${this.name} this trainNo ${this.trainNo} will run at 7PM sharp!`)
-    }
-}
-
-let lrb = new h("Lrb", 987)
-lrb.run()
-
-
-
-
-
+let a = new Railway("aaaa")
+a.submitted()
 
 
 
