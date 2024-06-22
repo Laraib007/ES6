@@ -1091,10 +1091,14 @@
 
 
 let arr = [1,2,3,4,5,6,7,8,9]
-let [a, , , ...rest] = arr;
-console.log(a, rest)
+// let [a, , , ...rest] = arr;
+// console.log(a, rest)
+// let {obj} = {arr}
+function sum(a, b, c){
+return a + b + c
+}
 
-
+console.log(sum(...arr))
 
 
 
