@@ -1094,15 +1094,18 @@ let arr = [1,2,3,4,5,6,7,8,9]
 // let [a, , , ...rest] = arr;
 // console.log(a, rest)
 // let {obj} = {arr}
-function sum(a, b, c){
-return a + b + c
+// function sum(a, b, c){
+// return a + b + c
+// }
+// console.log(sum(...arr))
+
+let obj = {
+    name: "labi",
+    company: "Company xyz",
+    address: "XYZ"
 }
-
-console.log(sum(...arr))
-
-
-
-
+console.log(obj)
+console.log({...obj, name: "LRB"} )
 
 
 
