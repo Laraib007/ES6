@@ -1099,17 +1099,17 @@ let arr = [1,2,3,4,5,6,7,8,9]
 // }
 // console.log(sum(...arr))
 
-let obj = {
-    name: "labi",
-    company: "Company xyz",
-    address: "XYZ"
-}
-console.log(obj)
-console.log({...obj, name: "LRB"} )
+// let obj = {
+//     name: "labi",
+//     company: "Company xyz",
+//     address: "XYZ"
+// }
+// console.log(obj)
+// console.log({...obj, name: "LRB"} )
 
+let c = name => console.log(name)
 
-
-
+c("LABI")
 
 
 
