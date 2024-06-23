@@ -1112,20 +1112,93 @@
 // c("LABI")
 
 
-let x = {
-    name: "Labi",
-    role: "MERN Stack Developer",
-    exp: 30,
-    show: function (){
-        return console.log(`The Name of Developer is ${this.name} and Role is ${this.role}`)
+// let x = {
+//     name: "Labi",
+//     role: "MERN Stack Developer",
+//     exp: 30,
+//     show: function (){
+//         return console.log(`The Name of Developer is ${this.name} and Role is ${this.role}`)
+//     }
+// }
+
+// x.show()
+
+// class Password{
+// constructor(){
+// this.pass = ""
+// }
+
+// passGen = (len)=>{
+//     let chr = "abcdefghijklmnopqrstuvwxyz"
+//     let num = "0123456789"
+//     let sym = "@#%^&*()_+{}[];<>?/:"
+
+//     let i = 0
+//     while(i < len){
+//         this.pass += chr[Math.floor(Math.random() * chr.length)]
+//         this.pass += num[Math.floor(Math.random() * chr.length)]
+//         this.pass += sym[Math.floor(Math.random() * chr.length)]
+//         i+=3
+//     }
+    
+//     return this.pass
+// }
+
+// }
+
+// let pas = new Password();
+// console.log(pas.passGen(4))
+
+// class Password{
+//     constructor(){
+//     this.pass = ""
+//     }
+    
+//     passGen = (len)=>{
+//         let chr = "abcdefghijklmnopqrstuvwxyz"
+//         let num = "0123456789"
+//         let sym = "@#%^&*()_+{}[];<>?/:"
+    
+//         let i = 0
+//         while(i < len){
+//             this.pass += chr[Math.floor(Math.random() * chr.length)]
+//             this.pass += num[Math.floor(Math.random() * num.length)]
+//             this.pass += sym[Math.floor(Math.random() * sym.length)]
+//             i+=3
+//         }
+//         this.pass = this.pass.substr(0, len)
+//         return this.pass
+//     }
+    
+//     }
+    
+//     let pas = new Password();
+//     console.log(pas.passGen(9))
+    
+
+class Password{
+    constructor(){
+        this.passa = ""
+    }
+    generatePassword(len){
+        let chr = "abcdefghijklmnopqrstuvwxzy"
+        let num = "1234567890"
+        let sym = "!@#$%^&*()_+}?><:}{\|"
+
+       let i = 0
+        while (i < len) {
+            this.passa += chr[Math.floor(Math.random() * chr.length)]
+            this.passa += num[Math.floor(Math.random() * num.length)]
+            this.passa += sym[Math.floor(Math.random() * sym.length)]
+            i += 3;
+    }
+    this.passa = this.passa.substr(0, len)
+  return this.passa
     }
 }
 
-x.show()
-
-
-
-
+let p = new Password()
+console.log(p.generatePassword(7))
 
 
 
