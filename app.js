@@ -1090,7 +1090,7 @@
 // console.log(a.name)
 
 
-let arr = [1,2,3,4,5,6,7,8,9]
+// let arr = [1,2,3,4,5,6,7,8,9]
 // let [a, , , ...rest] = arr;
 // console.log(a, rest)
 // let {obj} = {arr}
@@ -1107,9 +1107,37 @@ let arr = [1,2,3,4,5,6,7,8,9]
 // console.log(obj)
 // console.log({...obj, name: "LRB"} )
 
-let c = name => console.log(name)
+// let c = name => console.log(name)
 
-c("LABI")
+// c("LABI")
+
+
+let x = {
+    name: "Labi",
+    role: "MERN Stack Developer",
+    exp: 30,
+    show: function (){
+        return console.log(`The Name of Developer is ${this.name} and Role is ${this.role}`)
+    }
+}
+
+x.show()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
