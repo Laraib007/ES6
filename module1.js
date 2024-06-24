@@ -2,7 +2,10 @@ let hello = ()=>{
     console.log("hello from module 1")
 }
 
-module.export = hello()
+let ahello = (name)=>{
+    console.log("hello " + name)
+}
 
+module.exports = {hello, ahello}
 
 

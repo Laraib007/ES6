@@ -1205,7 +1205,8 @@
 // console.log("working")
 
 const hello = require("./module1")
-hello
+
+hello.ahello("Labi")
 
 
 
