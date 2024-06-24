@@ -1204,9 +1204,8 @@
 
 // console.log("working")
 
-const hello = require("./module1")
-
-hello.ahello("Labi")
+const {hello, ahello} = require("./module1")
+ahello("Labi")
 
 
 
