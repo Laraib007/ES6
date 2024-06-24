@@ -1202,8 +1202,10 @@
 
 // using this code in node js in terminal
 
-console.log("working")
+// console.log("working")
 
+const hello = require("./module1")
+hello
 
 
 
