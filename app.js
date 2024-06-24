@@ -1200,7 +1200,7 @@ class Password{
 let p = new Password()
 console.log(p.generatePassword(7))
 
-
+// using this code in node js in terminal
 
 
 
