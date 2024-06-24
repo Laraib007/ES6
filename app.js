@@ -1176,33 +1176,33 @@
 //     console.log(pas.passGen(9))
     
 
-class Password{
-    constructor(){
-        this.passa = ""
-    }
-    generatePassword(len){
-        let chr = "abcdefghijklmnopqrstuvwxzy"
-        let num = "1234567890"
-        let sym = "!@#$%^&*()_+}?><:}{\|"
+// class Password{
+//     constructor(){
+//         this.passa = ""
+//     }
+//     generatePassword(len){
+//         let chr = "abcdefghijklmnopqrstuvwxzy"
+//         let num = "1234567890"
+//         let sym = "!@#$%^&*()_+}?><:}{\|"
 
-       let i = 0
-        while (i < len) {
-            this.passa += chr[Math.floor(Math.random() * chr.length)]
-            this.passa += num[Math.floor(Math.random() * num.length)]
-            this.passa += sym[Math.floor(Math.random() * sym.length)]
-            i += 3;
-    }
-    this.passa = this.passa.substr(0, len)
-  return this.passa
-    }
-}
+//        let i = 0
+//         while (i < len) {
+//             this.passa += chr[Math.floor(Math.random() * chr.length)]
+//             this.passa += num[Math.floor(Math.random() * num.length)]
+//             this.passa += sym[Math.floor(Math.random() * sym.length)]
+//             i += 3;
+//     }
+//     this.passa = this.passa.substr(0, len)
+//   return this.passa
+//     }
+// }
 
-let p = new Password()
-console.log(p.generatePassword(7))
+// let p = new Password()
+// console.log(p.generatePassword(7))
 
 // using this code in node js in terminal
 
-
+console.log("working")
 
 
 
