@@ -1204,10 +1204,20 @@
 
 // console.log("working")
 
-const {hello, ahello} = require("./module1")
-ahello("Labi")
+// const {hello, ahello} = require("./module1")
+// ahello("Labi")
 
+const express = require('express')
+const app = express()
+const port = 3000
 
+app.get('/', (req, res) => {
+  res.send('Hello Wania!')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
 
 
 
