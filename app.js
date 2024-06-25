@@ -1207,30 +1207,33 @@
 // const {hello, ahello} = require("./module1")
 // ahello("Labi")
 
-const express = require('express')
-const path = require('path')
-const app = express()
-const port = 3000
+// const express = require('express')
+// const path = require('path')
+// const app = express()
+// const port = 3000
 
-app.get('/', (req, res) => {
-    console.log(req.query.name)
-  res.send('Hello opkk!')
-})
+// app.get('/', (req, res) => {
+//     console.log(req.query.name)
+//   res.send('Hello opkk!')
+// })
 
-app.get('/about', (req, res) => {
-    res.sendFile(path.join(__dirname, "index.html"))
-    // res.send('About')
-  })
+// app.get('/about', (req, res) => {
+//     res.sendFile(path.join(__dirname, "index.html"))
+//     // res.send('About')
+//   })
 
-  app.get('/home', (req, res) => {
-    res.send('Home')
-  })
+//   app.get('/home', (req, res) => {
+//     res.send('Home')
+//   })
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+// app.listen(port, () => {
+//   console.log(`Example app listening on port ${port}`)
+// })
 
 
+let rex = /very/g
+let str = "he is very very good boy and very very."
+console.log(str.replace(rex, "VERY"))
 
 
 
