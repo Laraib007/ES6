@@ -1215,6 +1215,14 @@ app.get('/', (req, res) => {
   res.send('Hello Wania!')
 })
 
+app.get('/about', (req, res) => {
+    res.send('About')
+  })
+
+  app.get('/home', (req, res) => {
+    res.send('Home')
+  })
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
