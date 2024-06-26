@@ -1231,12 +1231,30 @@
 // })
 
 
-let rex = /very/g
-let str = "he is very very good boy and very very."
-console.log(str.replace(rex, "VERY"))
+// let rex = /very/g
+// let str = "he is very very good boy and very very."
+// console.log(str.replace(rex, "VERY"))
 
 
+const express = require('express')
+const path = require('path')
+const app = express()
+const multer = require('multer')
+const upload = multer({dest: 'uploads/'})
+const port = 3000
 
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, "./index.html"))
+})
+
+app.post('/marge', upload.array('pdfs', 2), function (req, res, next) {
+    console.log(req.files)
+    res.send({data: req.files})
+  })
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
 
 
 
