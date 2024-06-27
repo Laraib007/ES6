@@ -1236,20 +1236,24 @@
 // console.log(str.replace(rex, "VERY"))
 
 
-const express = require('express')
-const path = require('path')
+import express from 'express'
+import path from'path' 
 const app = express()
-const multer = require('multer')
+import multer from'multer'
+import {mergPDF} from './merge.js'
+import { dirname } from 'path';
 const upload = multer({dest: 'uploads/'})
+app.use('/static', express.static('public'))
 const port = 3000
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, "./index.html"))
+  dirname = res.sendFile(path.join(__dirname, "./index.html"))
 })
 
-app.post('/marge', upload.array('pdfs', 2), function (req, res, next) {
+app.post('/marge', upload.array('pdfs', 2), async (req, res, next)=> {
     console.log(req.files)
-    res.send({data: req.files})
+    mergPDF(path.join(__dirname, req.path[0].path), path.join(__dirname, req.path[1].path))
+    await res.redirect('https://localhost/3000/static/merged.pdf')
   })
 
 app.listen(port, () => {
