@@ -1236,29 +1236,29 @@
 // console.log(str.replace(rex, "VERY"))
 
 
-import express from 'express'
-import path from'path' 
-const app = express()
-import multer from'multer'
-import {mergPDF} from './merge.js'
-import { dirname } from 'path';
-const upload = multer({dest: 'uploads/'})
-app.use('/static', express.static('public'))
-const port = 3000
+// import express from 'express'
+// import path from'path' 
+// const app = express()
+// import multer from'multer'
+// import {mergPDF} from './merge.js'
+// import { dirname } from 'path';
+// const upload = multer({dest: 'uploads/'})
+// app.use('/static', express.static('public'))
+// const port = 3000
 
-app.get('/', (req, res) => {
-  dirname = res.sendFile(path.join(__dirname, "./index.html"))
-})
+// app.get('/', (req, res) => {
+//   dirname = res.sendFile(path.join(__dirname, "./index.html"))
+// })
 
-app.post('/marge', upload.array('pdfs', 2), async (req, res, next)=> {
-    console.log(req.files)
-    mergPDF(path.join(__dirname, req.path[0].path), path.join(__dirname, req.path[1].path))
-    await res.redirect('https://localhost/3000/static/merged.pdf')
-  })
+// app.post('/marge', upload.array('pdfs', 2), async (req, res, next)=> {
+//     console.log(req.files)
+//     mergPDF(path.join(__dirname, req.path[0].path), path.join(__dirname, req.path[1].path))
+//     await res.redirect('https://localhost/3000/static/merged.pdf')
+//   })
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+// app.listen(port, () => {
+//   console.log(`Example app listening on port ${port}`)
+// })
 
 
 
